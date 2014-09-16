@@ -21,6 +21,6 @@ public class HelloAndroidActivityTest {
         Activity activity = Robolectric.buildActivity(HelloAndroidActivity.class).create().get();
         TextView results = (TextView) activity.findViewById(R.id.textView);
 
-        assertThat(results.getText().toString(), equalTo("Testing Android Rocks!"));
+        assertThat(results.getText().toString(), equalTo("Hello"));
     }
 }
